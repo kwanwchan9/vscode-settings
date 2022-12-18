@@ -1,0 +1,200 @@
+{
+  // Theme
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Default Dark+",
+
+  // Display Setting
+  "window.zoomLevel": 2,
+  "editor.fontSize": 17,
+  "editor.lineHeight": 0,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.autohide": true,
+
+  // Editor Setting
+  "editor.accessibilitySupport": "off", // screen reader setting
+  "files.autoSave": "afterDelay",
+  "editor.stickyScroll.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "workbench.editor.enablePreview": false, // Disable Preview of file
+  "workbench.editor.enablePreviewFromQuickOpen": false, // Disable Preview of file on quick open
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // Terminal Setting
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // Windows Default Terminal
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+
+  // Auto Rename and Close Tag
+  "editor.linkedEditing": true, // auto rename tag
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+
+  // Auto Import
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // Format Setting
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2, // Tab 2 space or 4 space
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false, // JavaScript default format
+  "typescript.format.enable": false, // TypeScript default format
+  // Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.jsxSingleQuote": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  // Eslint
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  // },
+
+  // React Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  // Github Peek disable
+  // "editor.gotoLocation.alternativeDeclarationCommand": "",
+  // "editor.gotoLocation.alternativeDefinitionCommand": "",
+  // "editor.gotoLocation.alternativeTypeDefinitionCommand": "",
+  // "editor.gotoLocation.multipleDeclarations": "goto",
+  // "editor.gotoLocation.multipleDefinitions": "goto",
+  // "editor.gotoLocation.multipleImplementations": "goto",
+  // "editor.gotoLocation.multipleReferences": "goto",
+  // "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+  /** Extensions **/
+
+  // Live Server
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.NoBrowser": true,
+  // "liveServer.settings.CustomBrowser": "microsoft-edge",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.host": "127.0.0.1",
+  "liveServer.settings.port": 5050,
+
+  // Spell Checker
+  "cSpell.language": "en,lorem,en-US",
+
+  // Total TypeScript
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": false,
+
+  // Peacock
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+
+  // Code Runner executor
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "C:\\Users\\p445c\\AppData\\Local\\Programs\\Python\\Python310\\python.exe", // windows
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runhaskell",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName"
+  },
+
+  // Ignore Github Sync Setting
+  "settingsSync.ignoredSettings": [
+    "editor.fontSize",
+    "terminal.integrated.fontSize"
+  ]
+}

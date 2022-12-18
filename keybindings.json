@@ -1,0 +1,28 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "f8",
+    "command": "-editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+f8",
+    "command": "workbench.action.terminal.runSelectedText"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear"
+  },
+  {
+    "key": "f8",
+    "command": "python.execInTerminal-icon"
+  },
+  {
+    "key": "f8",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "consolelogstatement": {
+    "prefix": ["clss"],
+    "scope": "javascript,typescript",
+    "body": ["console.log(\"$1\");"],
+    "description": ["console.log string statement"]
+  },
+  "ifelse": {
+    "prefix": ["ife"],
+    "scope": "javascript,typescript",
+    "body": ["if (${1:condition}) {\n\t$2\n} else {\n\t$3\n}"],
+    "description": ["if else statement"]
+  },
+  "ifelseif": {
+    "prefix": ["ifeif"],
+    "scope": "javascript,typescript",
+    "body": [
+      "if (${1:condition}) {\n\t$2\n} else if(${3:condition}) {\n\t$4\n} else {\n\t$5\n}"
+    ],
+    "description": ["if else if statement"]
+  }
+}
