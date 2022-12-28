@@ -5,12 +5,13 @@
 
   // Display Setting
   "window.zoomLevel": 2,
-  "editor.fontSize": 17,
+  "editor.fontSize": 15,
   "editor.lineHeight": 0,
   "editor.minimap.showSlider": "always",
   "editor.minimap.autohide": true,
 
   // Editor Setting
+  "editor.snippetSuggestions": "top",
   "editor.accessibilitySupport": "off", // screen reader setting
   "files.autoSave": "afterDelay",
   "editor.stickyScroll.enabled": true,
@@ -95,7 +96,7 @@
 
   // Total TypeScript
   "totalTypeScript.hideAllTips": false,
-  "totalTypeScript.hideBasicTips": false,
+  "totalTypeScript.hideBasicTips": true,
 
   // Peacock
   "peacock.favoriteColors": [
@@ -158,7 +159,7 @@
     "fsharp": "fsi",
     "csharp": "scriptcs",
     "vbscript": "cscript //Nologo",
-    "typescript": "ts-node",
+    "typescript": "tsc $fileName && node $fileNameWithoutExt.js",
     "coffeescript": "coffee",
     "scala": "scala",
     "swift": "swift",
@@ -191,10 +192,15 @@
     "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "sml": "cd $dir && sml $fileName"
   },
+  // "code-runner.runInTerminal": true,
 
   // Ignore Github Sync Setting
   "settingsSync.ignoredSettings": [
     "editor.fontSize",
     "terminal.integrated.fontSize"
-  ]
+  ],
+  "totalTypeScript.hiddenTips": ["interface-declaration"],
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
 }

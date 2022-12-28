@@ -1,8 +1,14 @@
 {
+  "consolelog": {
+    "prefix": ["cls"],
+    "scope": "javascript,typescript",
+    "body": ["console.log($1)"],
+    "description": ["console.log"]
+  },
   "consolelogstatement": {
     "prefix": ["clss"],
     "scope": "javascript,typescript",
-    "body": ["console.log(\"$1\");"],
+    "body": ["console.log(\"$1\")"],
     "description": ["console.log string statement"]
   },
   "ifelse": {
@@ -18,5 +24,17 @@
       "if (${1:condition}) {\n\t$2\n} else if(${3:condition}) {\n\t$4\n} else {\n\t$5\n}"
     ],
     "description": ["if else if statement"]
+  },
+  "require module": {
+    "prefix": ["reqm"],
+    "scope": "javascript,typescript",
+    "body": ["const ${1:module} = require('${1:module}')"],
+    "description": ["require module"]
+  },
+  "ternary operator": {
+    "prefix": ["tero"],
+    "scope": "javascript,typescript",
+    "body": ["${1:condition} ? '${2:true}' : ${3:false}"],
+    "description": ["require module"]
   }
 }
